@@ -34,7 +34,7 @@ export default{
 
 <style>
 #home{
-    background:url('../../src/assets/pizza.jpg') no-repeat center;
+    background:url('../assets/pizza.jpg') no-repeat center;
     /* background:url('../../dist/pizza.jpg') no-repeat center; */
     height:85vh;
     padding:10%;

@@ -3,8 +3,9 @@
         <div class="col-md-12 col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <img src="../../src/assets/logo.png" alt="" class="mx-auto d-block">
+                    <!-- <img src="../../src/assets/logo.png" alt="" class="mx-auto d-block"> -->
                     <!-- <img src="../../dist/logo.png" alt="" class="mx-auto d-block"> -->
+                     <img :src="picUrl" alt="" class="mx-auto d-block">
                     <form @submit.prevent='onSubmit'>
                         <div class="form-group">
                             <label for="email">邮箱</label>
@@ -27,10 +28,12 @@
 </template>
 
 <script>
+    import logoPic from '../../src/assets/logo.png'
     import axios from 'axios'
     export default{
         data(){
             return{
+                picUrl:logoPic,
                 email:'',
                 password:'',
                 confirmPassword:''
